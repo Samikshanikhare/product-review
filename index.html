@@ -34,17 +34,15 @@
     <img src="1.jpg" class="mainimg" id="mainimg">
     <div class="imgcontainer">
         <img src="1.jpg" class="imgages"onclick="Changeimg('1.jpg')">
-        <img src="2.jpg"class="imgages">
-        <img src="3.jpg"class="imgages">
-        <img src="4.jpg"class="imgages">
-        <img src="5.jpg"class="imgages">
+        <img src="2.jpg"class="imgages"onclick="Changeimg('2.jpg')">
+        <img src="3.jpg"class="imgages"onclick="Changeimg('3.jpg')">
+        <img src="4.jpg"class="imgages"onclick="Changeimg('4.jpg')">
+        <img src="5.jpg"class="imgages"onclick="Changeimg('5.jpg')">
     </div>
     <script>
         function Changeimg(imagesName){
             const mainimgelement = document.getElementById('mainimg')
             mainimgelement.src=imagesName
-
-
         }
     </script>
 </body>
