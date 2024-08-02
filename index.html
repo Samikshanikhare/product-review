@@ -5,7 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Review</title>
 </head>
+<style>
+    body{
+        background-color:#FFEEDD;
+    }
+    .mainimg{
+        height: 550px;
+        width: 550px;
+        display: block;
+        margin: 30px auto;
+        border: 0.5px solid black;
+        border-radius: 20px;
+        box-shadow: 0.5px 0.5px 20px gray;
+    }
+    .imgages{
+        height: 90px;
+        border: 0.5px solid black;
+        border-radius: 5px;
+        margin: 20px;
+        cursor: pointer;
+    }
+    .imgcontainer{
+        display: flex;
+        justify-content: center;
+    }
+</style>
 <body>
-    
+    <img src="1.jpg" class="mainimg" id="mainimg">
+    <div class="imgcontainer">
+        <img src="1.jpg" class="imgages"onclick="Changeimg('1.jpg')">
+        <img src="2.jpg"class="imgages">
+        <img src="3.jpg"class="imgages">
+        <img src="4.jpg"class="imgages">
+        <img src="5.jpg"class="imgages">
+    </div>
+    <script>
+        function Changeimg(imagesName){
+            const mainimgelement = document.getElementById('mainimg')
+            mainimgelement.src=imagesName
+
+
+        }
+    </script>
 </body>
 </html>
